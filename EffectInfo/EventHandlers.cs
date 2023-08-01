@@ -49,14 +49,14 @@ namespace EffectInfo
                     return;
                 }
                 hintText = hintText.Replace("\n<align=left>          " + effectName + "</align>", "");
-                ev.Player.ShowHint(hintText, _config.HintDuration);
+                ev.Player.ShowHint(hintText, 99999);
                 return;
             }
             
             if (ev.Player.ActiveEffects.Contains(ev.Effect)) return;
             
             hintText += "\n<align=left>          " + effectName + "</align>";
-            ev.Player.ShowHint(hintText, _config.HintDuration);
+            ev.Player.ShowHint(hintText, 99999);
         }
         
         // Cleansing Hint on death

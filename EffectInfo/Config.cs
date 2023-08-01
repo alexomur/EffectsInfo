@@ -9,6 +9,5 @@ namespace EffectInfo
 
         // Default hint text
         public string HintText { get; set; } = "\n\n\n\n\n\n\n\n\n<align=left>          Effects:</align>";
-        public int HintDuration { get; set; } = 9999;
     }
 }
