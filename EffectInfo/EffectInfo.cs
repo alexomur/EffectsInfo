@@ -42,6 +42,8 @@ namespace EffectInfo
 
         private void UnregisterEvents()
         {
+            Player.ChangingRole -= _handlers.OnChangingRole;
+            Player.ReceivingEffect -= _handlers.OnReceivingEffect;
             _handlers = null;
         }
     }
